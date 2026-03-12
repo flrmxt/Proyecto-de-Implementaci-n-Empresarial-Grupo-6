@@ -1,0 +1,11 @@
+enable
+configure terminal
+hostname SWM2
+no ip domain-lookup
+
+! Configuracion VTP
+vtp domain ITLA-R1
+vtp mode server
+vtp password cisco123R1
+
+do write

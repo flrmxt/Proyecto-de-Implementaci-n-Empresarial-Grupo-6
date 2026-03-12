@@ -1,0 +1,22 @@
+enable
+configure terminal
+hostname SWA13
+no ip domain-lookup
+
+! Configuracion VTP
+vtp domain ITLA-R2
+vtp mode server
+vtp password cisco123R2
+
+! Creacion de VLANs
+vlan 110
+ name Finanzas
+vlan 120
+ name Academicos
+vlan 140
+ name Blackhull_R2
+vlan 199
+ name Nativa_R2
+
+exit
+do write

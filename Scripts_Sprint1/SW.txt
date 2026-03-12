@@ -1,0 +1,15 @@
+enable
+configure terminal
+hostname SW_DC
+no ip domain-lookup
+
+! Configuracion VTP
+vtp domain ITLA-R2
+vtp password cisco123R2
+vtp mode transparent
+
+vlan 130
+ name Datacenter
+
+exit
+do write
