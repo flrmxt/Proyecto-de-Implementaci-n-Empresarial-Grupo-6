@@ -1,8 +1,0 @@
-enable
-configure terminal
-hostname SWAC2
-no ip domain-lookup
-vtp domain SEDE_R1
-vtp mode client
-vtp password cisco123
-do write
