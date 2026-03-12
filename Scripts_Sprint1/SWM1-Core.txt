@@ -1,0 +1,24 @@
+enable
+configure terminal
+hostname SWM1
+no ip domain-lookup
+
+! Configuracion VTP
+vtp domain SEDE_R1
+vtp mode server
+vtp password cisco123
+
+! Creacion de VLANs
+vlan 10
+ name Estudiantes
+vlan 20
+ name Docentes
+vlan 30
+ name Gestion
+vlan 40
+ name Voz
+vlan 50
+ name Blackhull_R1
+
+exit
+do write

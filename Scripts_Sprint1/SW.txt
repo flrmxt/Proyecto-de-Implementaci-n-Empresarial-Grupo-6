@@ -1,0 +1,15 @@
+enable
+configure terminal
+hostname SW_DC
+no ip domain-lookup
+
+! Configuracion VTP
+vtp domain SUCURSAL_R2
+vtp password cisco123
+vtp mode transparent
+
+vlan 130
+ name Datacenter
+
+exit
+do write

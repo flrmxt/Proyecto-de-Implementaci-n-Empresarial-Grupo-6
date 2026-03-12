@@ -1,0 +1,11 @@
+enable
+configure terminal
+hostname SWM2
+no ip domain-lookup
+
+! Configuracion VTP
+vtp domain SEDE_R1
+vtp mode client
+vtp password cisco123
+
+do write
